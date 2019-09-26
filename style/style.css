@@ -1,0 +1,162 @@
+@charset "UTF-8";
+:root {
+  font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box; }
+
+header {
+  width: 100%;
+  height: 5vh; }
+
+.conteiner {
+  width: 90%;
+  margin: 0 auto; }
+
+.nav {
+  height: 100%; }
+  .nav .list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+  .nav .list__item {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.section__header {
+  min-width: 100%;
+  font-size: 2em;
+  text-align: center; }
+
+.section__description {
+  min-width: 100%;
+  text-align: center; }
+
+.btn {
+  min-width: 10vw;
+  min-height: 5vh;
+  padding: 0 2em; }
+
+.btn--radius {
+  border-radius: 50px;
+  background-color: rgba(9, 156, 9, 0.719);
+  border: 0; }
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.main {
+  height: 60vh;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(workspace.jpg), center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .main .section__header {
+    text-align: center;
+    font-size: 2.5em; }
+  .main .section__description {
+    padding: 1em 0 3em 0;
+    text-align: center; }
+  .main .btn--radius {
+    margin: 0 auto;
+    color: white; }
+
+.ourServices {
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap; }
+  .ourServices .section__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .ourServices .section__description {
+    padding: 0; }
+
+.tiles {
+  width: 33.3%;
+  height: 60%;
+  text-align: center;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .tiles .tiles__header {
+    padding: 2em 0; }
+
+.test {
+  color: white;
+  width: 70%;
+  min-height: 50vh;
+  margin-left: 30%;
+  padding: 2em 3em;
+  text-align: left;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(ocean.jpg), center;
+  background-size: cover; }
+  .test .section__header {
+    text-align: left; }
+  .test .section__description {
+    text-align: left;
+    padding: 2em 0;
+    font-size: 1.2em; }
+  .test .list {
+    font-size: 1.2em; }
+  .test .list__item {
+    padding-top: 1em; }
+  .test .list__item::before {
+    content: '✓';
+    padding-right: 1em; }
+  .test .btn {
+    margin-top: 4em;
+    color: white; }
+
+.latestProject {
+  min-height: 70vh; }
+  .latestProject .icon {
+    min-width: 5vw;
+    text-align: left; }
+  .latestProject .section__header {
+    padding-top: 2em; }
+  .latestProject .tiles {
+    width: 100%;
+    background: url("iPad.png");
+    background-repeat: no-repeat;
+    background-position-x: 40vw;
+    background-size: contain;
+    height: 100%;
+    padding: 0; }
+  .latestProject .tiles--project {
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+  .latestProject .list {
+    display: flex;
+    flex-wrap: wrap; }
+  .latestProject .list__item {
+    display: flex;
+    width: 100%; }
+  .latestProject .conteiner__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0; }
+  .latestProject .tiles__header {
+    padding-bottom: 1em;
+    text-align: left; }
+  .latestProject .tiles__description {
+    text-align: left;
+    width: 50%; }
+  .latestProject .ipad_img {
+    width: 50%; }
+
+/*# sourceMappingURL=style.css.map */
