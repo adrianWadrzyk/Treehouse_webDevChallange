@@ -21,11 +21,6 @@ header {
     height: 5vh;
 }
 
-.conteiner {
-    width: 90%;
-    margin: 0 auto;
-}
-
 .nav {
     height: 100%;
 
@@ -77,7 +72,7 @@ header {
         linear-gradient(rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6),
         ),
-        url(workspace.jpg),
+        url("../photo/workspace.jpg"),
         center;
     background-size: cover;
     @include flex_vertical_center(center);
@@ -136,7 +131,7 @@ header {
         linear-gradient(rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4),
         ),
-        url(ocean.jpg),
+        url(../photo/ocean.jpg),
         center;
     background-size: cover;
 
@@ -171,6 +166,9 @@ header {
 
 .latestProject {
     min-height: 70vh;
+    width: 100%;
+   
+    
 
     .icon {
         min-width: 5vw;
@@ -183,12 +181,13 @@ header {
 
     .tiles {
         width: 100%;
-        background: url("iPad.png") ;
-        background-repeat: no-repeat;
-        background-position-x: 40vw;
-        background-size: contain;
         height: 100%;
         padding: 0;
+        background: url("../photo/iPad.png") ;
+        background-repeat: no-repeat;
+        background-position-x: 50vw;
+        background-size: contain;
+        padding-left: 5%;
     }
 
     .tiles--project {
