@@ -13,14 +13,16 @@ header {
   height: 5vh; }
 
 .nav {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
   .nav .list {
     display: flex;
-    width: 100%;
     height: 100%;
-    text-align: center; }
+    width: 70%;
+    text-align: center;
+    margin: 0 auto; }
   .nav .list__item {
-    width: 20%;
+    width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -200,6 +202,9 @@ header {
 
   .contact_us .btn {
     width: 25%; } }
+@media only screen and (max-width: 700px) {
+  .nav .list {
+    width: 100%; } }
 @media only screen and (max-width: 550px) {
   .ourServices .tiles__conteiner .tiles {
     width: 75%; }
@@ -213,6 +218,9 @@ header {
   .contact_us .btn {
     width: 35%; } }
 @media only screen and (max-width: 450px) {
+  .nav .list {
+    font-size: 0.8em; }
+
   .main .section__header {
     padding: 0; }
 
