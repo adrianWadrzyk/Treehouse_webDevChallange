@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
-  font-size: 16px; }
+  font-size: 16px;
+  scroll-behavior: smooth; }
 
 * {
   margin: 0;
@@ -8,13 +9,25 @@
   overflow-x: hidden;
   box-sizing: border-box; }
 
+@keyframes showing {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes slide-left {
+  0% {
+    margin-left: 100%; }
+  100% {
+    margin-left: 0; } }
 header {
   width: 100%;
-  height: 5vh; }
+  height: 5vh;
+  position: fixed;
+  background-color: white; }
 
 .nav {
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   .nav .list {
     display: flex;
     height: 100%;
@@ -27,6 +40,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .nav .list__item a {
+      text-decoration: none;
+      color: inherit; }
+    .nav .list__item:hover {
+      cursor: pointer;
+      background-color: rgba(9, 156, 9, 0.719);
+      transition: 1s; }
 
 .section__header {
   text-align: center;
@@ -42,7 +62,7 @@ header {
 .tiles {
   width: 33.3%;
   text-align: center;
-  padding: 0 2em;
+  padding: 1em 2em;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -84,11 +104,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .ourServices .tiles:nth-child(odd) {
+    background-color: rgba(9, 156, 9, 0.719); }
   .ourServices .tiles__conteiner {
     display: flex;
     min-height: 30vh; }
 
-.test {
+.offer {
   color: white;
   width: 70%;
   margin-left: 30%;
@@ -100,20 +122,20 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .test .section__header {
+  .offer .section__header {
     text-align: left;
     padding-left: 0; }
-  .test .section__description {
+  .offer .section__description {
     text-align: left;
     padding-left: 0; }
-  .test .list {
+  .offer .list {
     font-size: 1.2em; }
-  .test .list__item {
+  .offer .list__item {
     padding-top: 1em; }
-  .test .list__item::before {
+  .offer .list__item::before {
     content: '✓';
     padding-right: 1em; }
-  .test .btn {
+  .offer .btn {
     margin-top: 4em;
     width: 20%;
     color: white; }
@@ -184,7 +206,7 @@ header {
         width: 60%;
         margin: 0 auto; }
 
-  .test {
+  .offer {
     width: 100%;
     padding: 0 2em;
     margin: 2em 0 0 0; }
@@ -209,7 +231,7 @@ header {
   .ourServices .tiles__conteiner .tiles {
     width: 75%; }
 
-  .test .btn {
+  .offer .btn {
     width: 40%; }
 
   .culture__value .tiles .tiles__description {
