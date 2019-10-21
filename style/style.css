@@ -107,7 +107,10 @@ header {
   .main * {
     opacity: 0; }
   .main .section__header--big {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .main .btn--radius {
     margin: 0 auto;
     color: white; }
@@ -241,26 +244,32 @@ header {
   .contact_us .btn {
     width: 25%; } }
 @media only screen and (max-width: 700px) {
+  :root {
+    font-size: 12px; }
+
   .nav .list {
-    width: 100%; } }
+    width: 100%; }
+
+  .offer {
+    padding: 2em; }
+    .offer .btn {
+      width: 40%; } }
 @media only screen and (max-width: 550px) {
   .ourServices .tiles__conteiner .tiles {
     width: 75%; }
-
-  .offer .btn {
-    width: 40%; }
 
   .culture__value .tiles .tiles__description {
     width: 75%; }
 
   .contact_us .btn {
-    width: 35%; } }
+    width: 40%; } }
 @media only screen and (max-width: 450px) {
-  .nav .list {
-    font-size: 0.8em; }
+  :root {
+    font-size: 10px; }
 
   .main .section__header {
-    padding: 0; }
+    padding: 0;
+    min-height: 10%; }
 
   .ourServices .tiles__conteiner .tiles {
     width: 90%; } }
