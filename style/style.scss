@@ -28,6 +28,24 @@
     }
 }
 
+@keyframes slide-right {
+    0% {
+        margin-right: 100%;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+
+@keyframes resize {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 @mixin flex_vertical_center ($center) {
     display: flex;
     flex-direction: column;
@@ -39,6 +57,7 @@ header {
     height: 5vh;
     position: fixed;
     background-color: white;
+    z-index: 100;
 }
 
 .nav {
@@ -113,6 +132,9 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), ), url("../photo/workspace.jpg"), center;
     background-size: cover;
     @include flex_vertical_center(center);
+    * {
+        opacity: 0;
+    }
     .section__header--big {
         font-size: 2.5em;
     }
@@ -143,6 +165,7 @@ header {
     text-align: left;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), ), url(../photo/ocean.jpg), center;
     background-size: cover;
+    opacity: 0;
     @include flex_vertical_center(center);
     .section__header {
         text-align: left;
@@ -198,6 +221,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    .tiles {
+        transform: scale(0.1);
+    }
     .section__description {
         padding-bottom: 4em;
     }
