@@ -5,4 +5,6 @@ Used technologies :
 - CSS3
 - BEM
 - SCSS
+- JS (ES6)
 - Responsive Web Design
+
