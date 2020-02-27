@@ -22,29 +22,25 @@ window.addEventListener("load", () => {
 
     //scroll animation for sections
     var onScrollHandler = () => {
-        let licznik = 0;
+        let counter = 0;
         let clRectOffer = offer.getBoundingClientRect();
         let clRectCultureValue = cultureValueTiles[0].parentNode.getBoundingClientRect();
 
         if (clRectOffer.top < 550) {
             offer.style.animation = "showing 3s forwards";
-            licznik++;
+            counter++;
         }
 
         if (clRectCultureValue.top < 550) {
             for (let el of cultureValueTiles) {
                 el.style.animation = " resize 3s forwards";
             }
-            licznik++;
+            counter++;
         }
-        if (licznik == 2) {
+        if (counter == 2) {
             window.removeEventListener('scroll', onScrollHandler);
         }
     };
 
     window.addEventListener('scroll', onScrollHandler, false);
-
-
-
-
 });
